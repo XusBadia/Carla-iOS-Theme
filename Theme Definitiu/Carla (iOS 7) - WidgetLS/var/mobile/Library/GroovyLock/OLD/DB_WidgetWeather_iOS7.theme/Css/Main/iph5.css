@@ -1,0 +1,776 @@
+body {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin: 0;
+	padding: 0;
+	width: 320px;
+	height: 568px;
+	font-family: Helvetica;
+}
+
+@font-face {
+    font-family: 'helvetica_neue_ultralight';
+    src: url('../helvetica_neue_ultralight.ttf');
+}
+
+@-webkit-keyframes fadein {
+	0%		{opacity : 0.0;}
+	50%		{opacity : 0.0;}
+	100%		{opacity : 1.0;}
+}
+
+.InfoMoveDown { opacity: 1.0; }
+.InfoMoveUp { opacity: 0.0; }
+
+
+#TouchLayerTop{
+	position: absolute;
+	height: 130px;
+	width: 320px;
+	top: 20px;
+	left: 0px;
+	z-index: 1001;
+}
+
+#TouchLayer{
+	position: absolute;
+	height: 100px;
+	width: 320px;
+	top: 210px;
+	left: 0px;
+	z-index: 1000;
+}
+
+#weatherWall {
+    position: absolute;
+    top: 0px;
+	left: 0px;
+	width: 320px;
+    height: 568px;
+    z-index: -4;
+	opacity : 0.0;
+	-webkit-animation: fadein 2s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;
+}
+
+#Overlay {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 320px;
+    height: 568px;
+	z-index: 100;
+	opacity : 0.0;
+	-webkit-animation: fadein 2s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;
+}
+
+#WeatherInfo {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 320px;
+	opacity: 0.0;
+	z-index: 30;
+	-webkit-animation: fadein 2s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;
+}
+
+#upperInfo {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 320px;
+	z-index: 30;
+	-webkit-transition: all 0.3s ease-in;
+}
+
+#city {
+	position:absolute;
+	top:40px;
+	left: 0px;
+	width:320px;
+	height:40px;
+	text-align:center;
+	font-weight: normal; 
+	font-size:25px;
+	color: #FCFCFC;
+	text-shadow: 0px 0px 1px #000;
+}
+
+#extraCity {
+	position:absolute;
+	top:40px;
+	left: 0px;
+	width:320px;
+	height:40px;
+	text-align:center;
+	font-weight: normal; 
+	font-size:25px;
+	color: #FCFCFC;
+	text-shadow: 0px 0px 1px #000;
+}
+
+#neighborhood {
+	position:absolute;
+	top:40px;
+	left: 0px;
+	width:320px;
+	height:40px;
+	text-align:center;
+	font-weight: normal; 
+	font-size:25px;
+	color: #FCFCFC;
+	text-shadow: 0px 0px 1px #000;
+}
+
+#temp {
+	position:absolute; 
+	top:85px;
+	left: 0px;
+	width:320px; 
+	height:100px; 
+	text-align:center; 
+	font-weight:normal; 
+	font-size:50px;
+	font-family:helvetica_neue_ultralight;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+}
+
+#highlowtemp {
+	position:absolute; 
+	top:171px;
+	left: -5px;
+	width:320px; 
+	height:20px; 
+	text-align:right; 
+	font-weight: light; 
+	font-size:11px;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+}
+
+#desc {
+	position:absolute; 
+	top:70px;
+	left: 0px;
+	height:32px;
+	width: 320px;
+	text-align:center; 
+	font-weight: light; 
+	font-size:15px;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+}
+
+#DigitalClock {
+	position:absolute; 
+	top:148px; 
+	left:5px; 
+	width:320px; 
+	height:120px; 
+	text-align:left; 
+	z-index: 30;
+	font-weight: medium;
+	opacity: 0.0;
+	-webkit-animation: fadein 2s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;	
+}
+
+#clock{
+	position: relative;
+	font-size: 22px;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+}
+
+#date {
+	position:absolute; 
+	top:22px;
+	left: 0px;
+	width:320px; 
+	height:20px; 
+	text-align:left; 
+	font-weight: normal; 
+	font-size:11px;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+	text-transform:uppercase;
+}
+
+#Day0Icon{
+	position:absolute;
+	height: 568px;
+	width: 320px;
+	top:0px;
+	left:0px;
+	z-index:-3;
+	opacity: 0.0;
+	-webkit-animation: fadein 2s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;
+}
+
+#woeid {
+	display:none;
+}
+
+#zip {
+	display:none;
+}
+
+#extendedInfo {
+	position: absolute;
+	height: 250px;
+	width: 320px;
+	top: 5px;
+	left: 0px;
+	z-index: 30;  
+	-webkit-transition: all 0.3s ease-in;
+}
+
+#wind {
+	position: absolute;
+	top: 55px;
+	left: 0px;
+	width: 160px;
+	height: 22px;
+	text-align: center;
+	font-weight: lighter;
+	font-size:15px;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+}
+
+#compass{
+	position: absolute;
+	top : 47px;
+	left: 40px;
+	width: 80px;
+	height: 80px;
+}
+
+#arrow {
+	position: absolute;
+	background:url('../../Images/arrow.png') center no-repeat;
+	background-size: 80px 80px;
+	width: 80px;
+	height: 80px;
+	-webkit-transition : all 0.3s ease-in-out;
+}
+
+#pressure {
+	position: absolute;
+	top: 55px;
+	right: 0px;
+	width: 160px;
+	height: 22px;
+	text-align: center;
+	font-weight: lighter;
+	font-size:15px;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+}
+
+#rising {
+	position: absolute;
+	top: 70px;
+	right: 0px;
+	width: 160px;
+	height: 22px;
+	text-align: center;
+	font-weight: lighter;
+	font-size:15px;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+}
+
+#humidity {
+	position: absolute;
+	top: 98px;
+	right: 0px;
+	width: 160px;
+	height: 22px;
+	text-align: center;
+	font-weight: lighter;
+	font-size:15px;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+}
+
+#visibility {
+	position: absolute;
+	top: 98px;
+	left: 0px;
+	width: 160px;
+	height: 22px;
+	text-align: center;
+	font-weight: lighter;
+	font-size:15px;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+}
+
+#sunrise {
+	position:absolute; 
+	top:40px;
+	left: 25px;
+	width:320px; 
+	height:20px; 
+	text-align:left; 
+	font-weight: light; 
+	font-size:15px;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+}
+
+#sunset {
+	position:absolute; 
+	top:40px;
+	left: -25px;
+	width:320px; 
+	height:20px; 
+	text-align:right; 
+	font-weight: light; 
+	font-size:15px;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+}
+
+#lastupdate {
+	display:none;
+}
+
+#xmlupdate {
+	position:absolute; 
+	top:465px;
+	left: 0px;
+	width:320px; 
+	height:20px; 
+	text-align:center; 
+	font-weight: normal; 
+	font-size:12px;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+}
+
+#forecast {
+	position: absolute;
+	height: 400px;
+	width: 320px;
+	top:270px;
+	left:0px;
+	z-index: 30;
+	opacity: 0.0;
+	-webkit-animation: fadein 2s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;
+}
+
+#Day1 {
+	position: absolute;
+	top: 20px;
+	left:5px;
+	width : 320px;
+	font-weight: normal;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+	font-size:12px;
+	text-align:left;
+}
+
+#Day1Icon {
+	position: absolute;
+	top: 10px;
+	left:145px;
+	width: 30px;
+	height: 30px;
+}
+
+#Day1HiLo {
+	position: absolute;
+	top: 20px;
+	left:-5px;
+	width: 320px;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+	font-size:12px;
+	text-align:right;
+}
+
+#Day2 {
+	position: absolute;
+	top: 57px;
+	left:5px;
+	width : 320px;
+	font-weight: normal;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+	font-size:12px;
+	text-align:left;
+}
+
+#Day2Icon {
+	position: absolute;
+	top: 47px;
+	left:145px;
+	width: 30px;
+	height: 30px;
+}
+
+#Day2HiLo {
+	position: absolute;
+	top: 57px;
+	left:-5px;
+	width: 320px;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+	font-size:12px;
+	text-align:right;
+}
+
+#Day3 {
+	position: absolute;
+	top: 94px;
+	left:5px;
+	width : 320px;
+	font-weight: normal;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+	font-size:12px;
+	text-align:left;
+}
+
+#Day3Icon {
+	position: absolute;
+	top: 84px;
+	left:145px;
+	width: 30px;
+	height: 30px;
+}
+
+#Day3HiLo {
+	position: absolute;
+	top: 94px;
+	left:-5px;
+	width: 320px;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+	font-size:12px;
+	text-align:right;
+}
+
+#Day4 {
+	position: absolute;
+	top: 131px;
+	left:5px;
+	width : 320px;
+	font-weight: normal;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+	font-size:12px;
+	text-align:left;
+}
+
+#Day4Icon {
+	position: absolute;
+	top: 121px;
+	left:145px;
+	width: 30px;
+	height: 30px;
+}
+
+#Day4HiLo {
+	position: absolute;
+	top: 131px;
+	left:-5px;
+	width: 320px;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+	font-size:12px;
+	text-align:right;
+}
+
+#Day5 {
+	position: absolute;
+	top: 168px;
+	left:5px;
+	width : 320px;
+	font-weight: normal;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+	font-size:12px;
+	text-align:left;
+}
+
+#Day5Icon {
+	position: absolute;
+	top: 158px;
+	left:145px;
+	width: 30px;
+	height: 30px;
+}
+
+#Day5HiLo {
+	position: absolute;
+	top: 168px;
+	left:-5px;
+	width: 320px;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+	font-size:12px;
+	text-align:right;
+}
+
+#hourlyforecast {
+    background-color: transparent;
+	position: absolute;
+	top: 206px;
+	left: 0px;
+	width : 640px;
+	height: 100px;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-duration: 0.8s;
+    -webkit-animation-direction: normal;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-fill-mode: forwards;
+	-webkit-transition : all 0.5s ease-in-out;
+}
+
+#Hour1, #Hour2, #Hour3, #Hour4, #Hour5, #Hour6, #Hour7, #Hour8, #Hour9, #Hour10, #Hour11, #Hour12 {
+	position: relative;
+	top: -19px;
+	width : 53px;
+	font-weight: normal;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+	font-size:14px;
+}
+
+#Hicon1, #Hicon2, #Hicon3, #Hicon4, #Hicon5, #Hicon6, #Hicon7, #Hicon8, #Hicon9, #Hicon10, #Hicon11, #Hicon12 {
+	position: relative;
+	top: -15px;
+	width: 25px;
+	height: 25px;
+}
+
+#Htemp1, #Htemp2, #Htemp3, #Htemp4, #Htemp5, #Htemp6, #Htemp7, #Htemp8, #Htemp9, #Htemp10, #Htemp11, #Htemp12 {
+	position: relative;
+	top: -11px;
+	width: 53px;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+	font-size:14px;
+}
+
+#Hpop1, #Hpop2, #Hpop3, #Hpop4, #Hpop5, #Hpop6, #Hpop7, #Hpop8, #Hpop9, #Hpop10, #Hpop11, #Hpop12 {
+	position: relative;
+	top: -17px;
+	width: 53px;
+	color: #88C5F0;
+	text-shadow: 0px 0px 1px #000;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.forecastTranslateLeft { -webkit-transform : translateX(-320px); }
+.forecastTranslateRight { -webkit-transform : translateX(0px); }
+
+
+@-webkit-keyframes TranslateLeft {
+    0%	{ -webkit-transform : translateX(0px); }
+    70% { -webkit-transform : translateX(-334px); }
+    85% { -webkit-transform : translateX(-314px); }
+    95% { -webkit-transform : translateX(-323px); }
+    100% { -webkit-transform : translateX(-320px); }
+}
+
+@-webkit-keyframes TranslateRight {
+    0%	{ -webkit-transform : translateX(-320px); }
+    70% { -webkit-transform : translateX(14px); }
+    85% { -webkit-transform : translateX(-6px); }
+    95% { -webkit-transform : translateX(3px); }
+    100% { -webkit-transform : translateX(0px); }
+}
+
+/* STARS AND METORS CONTAINER & WALLS, SUN, MOON AND STATIC WEATHER */
+
+#starContainer {
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+	left: 0px;
+    width: 320px;
+    height: 568px;
+    z-index: 6;
+    overflow: hidden;
+}
+
+#meteorContainer {
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+	left: 0px;
+    width: 320px;
+    height: 568px;
+    z-index: 7;
+    overflow: hidden;
+}
+
+#day_nightContainer {
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+	left: 0px;
+    width: 320px;
+    height: 568px;
+    z-index: 10;
+    overflow: hidden;
+}
+#sun {
+	background:url('../../Images/Weather/sun/sun.png') center no-repeat;
+	background-size: 320px 320px;
+    position: absolute;
+    top: -130px;
+	left: -160px;
+    width: 320px;
+    height: 320px;
+	margin : auto 0;
+    z-index: 13;
+	display: none;
+	-webkit-animation: shineSun 10s linear infinite normal;
+}
+#sunray {
+	background:url('../../Images/Weather/sun/sunray.png') center no-repeat;
+	background-size: 320px 320px;
+    position: absolute;
+    top: -130px;
+	left: -160px;
+    width: 320px;
+    height: 320px;
+	margin : auto 0;
+    z-index: 12;
+	display: none;
+	-webkit-animation: sunray_anim 10s linear infinite normal;
+	-webkit-transform-origin: 50% 50%;
+}
+@-webkit-keyframes sunray_anim {
+		0% { opacity : 0; }
+		50% { opacity : 0.6; -webkit-transform : scale(1.0, 1.0) translateZ(0); }
+		90% { opacity : .0; }
+		100% { opacity : 0; -webkit-transform : scale(1.5, 1.5) translateZ(0); }
+}
+@-webkit-keyframes shineSun {
+		0% { opacity : 0.5 ; }
+		50% { opacity : 10; }
+		100% { opacity : 0.5; }
+}
+#moon {
+	background:url('../../Images/Weather/moon/0.png') center no-repeat;
+	background-size: 320px 320px;
+    position: absolute;
+    top: -130px;
+	left: -160px;
+    width: 320px;
+    height: 320px;
+	margin : auto 0;
+    z-index: 13;
+	display: none;
+	-webkit-animation: shineMoon 10s linear infinite normal;
+}
+#moonray {
+	background:url('../../Images/Weather/moon/moonray.png') center no-repeat;
+	background-size: 320px 320px;
+    position: absolute;
+    top: -130px;
+	left: -160px;
+    width: 320px;
+    height: 320px;
+	margin : auto 0;
+    z-index: 12;
+	display: none;
+	-webkit-animation: shineMoonray 10s linear infinite normal;
+}
+@-webkit-keyframes shineMoon {
+		0% { opacity : 0.7; }
+		50% { opacity : 10; }
+		100% { opacity : 0.7; }
+}
+
+@-webkit-keyframes shineMoonray {
+		0% { opacity : 0.3 ; }
+		50% { opacity : 0.1; }
+		100% { opacity : 0.3; }
+}
+
+/* THUNDERSTORM */
+
+#frameContainer {
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+	left: 0px;
+    width: 320px;
+    height: 568px;
+    z-index: 20;
+    overflow: hidden;
+}
+
+/* CLOUDS */
+
+#cloudContainer {
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+	left: 0px;
+    width: 320px;
+    height: 568px;
+    z-index: 21;
+    overflow: hidden;
+}
+
+/* RAIN, SNOW, SLEET OR HAIL */
+
+#dropContainer {
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+	left: 0px;
+    width: 320px;
+    height: 568px;
+    z-index: 22;
+    overflow: hidden;
+}
+
+#circleContainer {
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+	left: 0px;
+    width: 320px;
+    height: 568px;
+    z-index: 22;
+    overflow: hidden;
+}
+
+#windContainer {
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+	left: 0px;
+    width: 320px;
+    height: 568px;
+    z-index: 26;
+    overflow: hidden;
+}
+
+#wiperContainer {
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+	left: 0px;
+    width: 320px;
+    height: 568px;
+    z-index: 50;
+    overflow: hidden;
+}

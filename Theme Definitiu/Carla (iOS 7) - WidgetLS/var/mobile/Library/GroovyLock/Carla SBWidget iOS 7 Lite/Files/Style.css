@@ -1,0 +1,193 @@
+	 /* Done by DemoneLatino */
+
+body {
+	margin:0;
+    top:0;
+    font-family: "Helvetica Neue";
+    text-shadow: 0px 1px 2px black;
+}
+.widgetcontainer{
+	position: relative;
+	margin-top: 20px;
+}
+
+#clock{
+	position:absolute;
+	top:5px;
+	left: 0px;
+	z-index:90;
+	font-size: 80px;
+	color: white;
+	text-shadow: 0px 1px 2px black;
+	text-align: center;
+	font-weight:100;
+	width: 320px;
+}
+#clockshadow{
+	position:absolute;
+	top:-10px;
+	left: 0px;
+	z-index:10;
+	font-size: 100px;
+	font-weight: 200;
+	color: transparent;
+	text-shadow: 0px 1px 7px rgba(0,0,0,.5);
+	text-align: center;
+	font-weight:100;
+	width: 320px;
+}
+
+#ampm{
+	text-transform: lowercase;
+	font-weight: bolder;
+	font-size:17px;
+	color:#dfdfdf;
+	text-align: left;
+	position:absolute;
+	width: 320px;
+	top:15px;
+	left:240px;
+	text-shadow: 0px 0px 1px black;
+}
+
+/*** DATE ***/
+
+.datewidget{
+	font-size: 12pt;
+}
+
+#weekday{
+	position:absolute;
+	top:100px;
+	left:-183px;
+	width:320px; height:100px;
+	text-align:right;
+	z-index:90;
+	font-weight: 300; 
+	color: white;
+}
+
+#date{
+	position:absolute;
+	text-align:center;
+	top:90px;
+	left:147px;
+	color: white;
+	font-size:22pt;
+	font-weight: 300;
+	z-index:90;
+	
+}
+
+#month{
+	top:100px;
+	left: 190px;
+	font-weight: 200;
+    color: white;
+    position: absolute;
+    text-align: left;
+}
+
+/* *************************************** */
+    /* ********** WEATHER  *************/
+
+.weatherwidget{
+	position: absolute;
+	top:134px;
+	font-size: 10pt;
+	left: 15px;
+}
+#city{
+	position:absolute;
+	top:5px;
+	left:187px;
+	width:320px;
+	text-align:left;
+	z-index:90;
+	font-weight: 300;
+	font-size: 11pt;
+	color: White;
+	text-transform: capitalize;
+}
+
+#desc{
+	position:absolute;
+	top:-2px;
+	left:-204px;
+	right: 0;
+	down: 0;
+	z-index:90;
+	width: 320px;
+	font-weight: 300;
+	text-align: right;
+	float: right;
+	color: white;
+	text-transform: capitalize;
+	text-shadow: 0px 1px 2px black;
+}
+
+#temp{
+	position:absolute;
+	top:16px;
+	left:-204px;
+	right: 0;
+	down: 0;
+	z-index:90;
+	width: 320px;
+	z-index:90;
+	font-weight: bolder;
+	text-align:right;
+	color: White;
+	text-shadow: 0px 1px 2px rgba(0,0,0,.8);
+	text-transform: capitalize;
+}
+
+#weatherIcon{
+	position:absolute; 
+	top: -10px; 
+	left: 120px; 
+	width:65px; 
+	z-index: 100; 
+}
+
+/* *************************************** */
+    /* ****** Refresh Image  ********* */
+
+#refresh{
+	position:absolute;
+	top:34px;
+	left:270px;
+	z-index:120;
+	text-align:center;
+	width: 19px; 
+	height: 19px;
+	display: none;
+}
+
+/* *************************************** */
+   /* ****** Weather High&Low  ********* */
+
+#HighLow{
+	position: absolute;
+	top: 79px;
+	left: -9px;
+	color: #f88017; 
+	font-size: 13px;
+	font-family: Courier New;
+}
+
+#separator{
+	color:white;
+	opacity: 0.7;
+	font-family: Default;
+}
+
+#lowtemp{
+	color: deepskyblue;
+	display: none;  
+}
+
+#hightemp {
+	color: darkorange;
+	display: none;
+}

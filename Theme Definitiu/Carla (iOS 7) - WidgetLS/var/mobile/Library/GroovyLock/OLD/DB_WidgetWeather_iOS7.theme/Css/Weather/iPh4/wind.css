@@ -1,0 +1,125 @@
+#windContainer > div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+	opacity: 0.0;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-timing-function: linear, ease-in;
+}
+#windContainer > div > img {
+     position: absolute;
+     width: 100px;
+     height: 100px;
+     -webkit-animation-iteration-count: infinite;
+     -webkit-animation-timing-function: ease-in-out;
+     -webkit-transform-origin: 50% -100%;
+}
+@-webkit-keyframes fade_seed {
+    0%	 { opacity: 0; }
+    10%	 { opacity: 0; }
+	20%  { opacity: 1; }
+    95%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-webkit-keyframes float_seed {
+    0%	 { -webkit-transform: translate(-100px, 0px); }
+    100% { -webkit-transform: translate(320px, -140px); }
+}
+@-webkit-keyframes float_seed2 {
+    0%	 { -webkit-transform: translate(-300px, 0px); }
+    100% { -webkit-transform: translate(520px, -300px); }
+}
+@-webkit-keyframes clockwiseSpin {
+    0%	 { -webkit-transform: rotateZ(-40deg); }
+    50%	 { -webkit-transform: rotateZ(+40deg); }
+    100% { -webkit-transform: rotateZ(-40deg); }
+}
+@-webkit-keyframes counterclockwiseSpinAndFlip {
+    0%	 { -webkit-transform: rotateZ(+40deg); }
+    50%	 { -webkit-transform: rotateZ(-40deg); }
+    100% { -webkit-transform: rotateZ(+20deg); }
+}
+
+#dandelion {
+	position: absolute;
+	background-size: 320px 320px;
+	top: 248px;
+	left: 0px;
+	height: 320px;
+	width: 320px;
+	opacity: 0.0;
+	-webkit-animation: dandelion_anim 2s ease-out 1 normal;
+	-webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes dandelion_anim {
+		0% { opacity : 0; }
+		50% { opacity : 0; }
+		100% { opacity : 0.8; }
+}
+
+#starContainer > div {
+    position: absolute;
+     width: 20px;
+     height: 20px;
+	 opacity: 0.0;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(0,1,1,0);
+}
+#starContainer > div > img {
+     position: absolute;
+     width: 20px;
+     height: 20px;
+}
+@-webkit-keyframes star_anim {
+	0% {
+	-webkit-transform : scale(0, 0);	
+	opacity: 0.0;
+	}
+	20% {
+	-webkit-transform : scale(1, 1);	
+	opacity: 0.7;
+	}
+	40% {
+	-webkit-transform : scale(0.5, 0.5);	
+	opacity: 0.5;
+	}
+	60% {
+	-webkit-transform : scale(1, 1);
+	opacity: 0.9;
+	}
+	90% {
+	-webkit-transform : scale(0, 0);
+	opacity: 0.0;
+	}
+	100% {opacity: 0.0;}
+}
+
+#meteorContainer > div {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+	 opacity: 0.0;
+    -webkit-animation-iteration-count: 1, 1;
+    -webkit-animation-timing-function: linear, ease-in-out;
+}
+#meteorContainer > div > img {
+     position: absolute;
+     width: 20px;
+     height: 20px;
+}
+@-webkit-keyframes drop1 {
+    0%	 { -webkit-transform: translate(0px, 0px); }
+    100% { -webkit-transform: translate(-60px, 60px); }
+}
+@-webkit-keyframes drop2 {
+    0%	 { -webkit-transform: translate(0px, 0px); }
+    100% { -webkit-transform: translate(60px, 60px); }
+}
+@-webkit-keyframes fade2 {
+    0%	 { opacity: 0; }
+	80%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
+

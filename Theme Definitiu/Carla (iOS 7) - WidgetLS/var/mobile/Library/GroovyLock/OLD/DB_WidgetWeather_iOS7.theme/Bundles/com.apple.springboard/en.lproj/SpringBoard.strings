@@ -1,0 +1,17 @@
+"ALARM_LOCK_LABEL" = "   ";
+"AWAY_LOCK_LABEL" = "   ";
+"AWAY_LOCK_LABEL_SHORT" = "   ";
+"CALENDAR_LOCK_LABEL" = "   ";
+"CF_USER_NOTE_LOCK_LABEL" = "  ";
+"ENTER_PASSCODE" = " ";
+"POWER_DOWN_LOCK_LABEL" = "   ";
+"REMOTE_NOTIFICATIONS_LOCK_FORMAT" = "   ";
+"REMOTE_NOTIFICATIONS_LOCK_LABEL" = "   ";
+"SEARCH_BAR_PLACEHOLDER" = "    ";
+"SLIDE_TO_ANSWER" = "answer";
+"SLIDE_TO_CALL_BACK" = "call back";
+"SLIDE_TO_CANCEL" = "cancel";
+"SLIDE_TO_LISTEN" = "listen";
+"SMS_LOCK_LABEL" = "sms";
+"TIMER_LOCK_LABEL" = "times up";
+"WRONG_PASSCODE" = " ";

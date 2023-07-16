@@ -1,0 +1,28 @@
+ <!-- code by Dacal mod by DemoneLatino -->
+
+<html><head>
+<title>DemoneLatino 1nCircle</title>
+<link rel="stylesheet" href="Files/Style.css" type="text/css" media="screen" />
+<script type="text/javascript" charset="utf-8" src="Scripts/main.js"></script>
+<script type="text/javascript" charset="utf-8"src="Scripts/location.js"></script>
+<script type="text/javascript" charset="utf-8" src="configureMe.js"/></script>
+</head>
+
+<body>
+
+<div id="clock"> <span id="ampm">
+	<script language="JavaScript">updateClock(); setInterval('updateClock()', 1000 )</script>
+</div>
+
+<div id="weekday"> <span id="date"> <span id="month">
+       <script language="JavaScript">calendarDate(); setInterval('calendarDate()', 1000 )</script>
+</div>
+
+<div id="desc"></div>
+<div id="city"></div>
+<div id="temp"></div>
+<div id="HighLow"><a id="hightemp"></a><a id="separator"> / </a><a id="lowtemp"></a></div>
+<img id="weatherIcon" src="Icon Sets/dunno.png"/>
+<img id="refresh" src="Files/Refresh.png" onClick="history.go(0)" value="Refresh">
+
+</body></html>

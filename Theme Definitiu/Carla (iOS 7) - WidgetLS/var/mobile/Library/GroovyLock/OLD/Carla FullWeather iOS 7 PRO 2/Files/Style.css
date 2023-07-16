@@ -1,0 +1,126 @@
+/* Done by DemoneLatino */
+
+body {
+	margin:0;
+    top:0;
+    font-family: "Helvetica Neue";
+    text-shadow: 0px 1px 2px black;
+}
+.widgetcontainer{
+	position: relative;
+	width: 320px;
+}
+
+/* *************************************** */
+    /* ********** WEATHER  *************/
+
+.weatherwidget{
+	position: absolute;
+	top:395px;
+	left: 5px;
+}
+
+#city, #temp{
+	position:absolute;
+	left:95px;
+	right: 0;
+	down: 0;
+	z-index:90;
+	width: 320px;
+	z-index:90;
+	text-align:left;
+	font-size: 11pt;
+	color: White;
+	text-shadow: 0px 1px 1px rgba(0,0,0,.8);
+}
+
+#city{
+	top:4px;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+
+#temp{
+	top:23px;
+	font-weight: 200;
+	text-transform: capitalize;
+}
+
+
+#desc{
+	position:absolute;
+	top:-20px;
+	left:20px;
+	z-index:90;
+	font-weight: 300;
+	text-align: left;
+	float: left;
+	color: white;
+	text-transform: capitalize;
+	text-shadow: 0px 1px 1px rgba(0,0,0,.8);
+	width: 320px;
+}
+
+#Day0Icon{
+	position:absolute; 
+	top: 0px; 
+	left: 5px; 
+	height: 64px; 
+	z-index: 100; 
+}
+
+#Day0IconFull{
+	position: absolute;
+	width: 320px;
+	top:0px;
+	left: 0px;
+	z-index: -999;
+}
+
+/* *************************************** */
+    /* ****** Refresh Image  ********* */
+
+#refresh{
+	position:absolute;
+	top:34px;
+	left:270px;
+	z-index:120;
+	text-align:center;
+	width: 19px; 
+	height: 19px;
+	display: none;
+}
+
+/* *************************************** */
+   /* ****** Weather High&Low  ********* */
+
+#HighLow{
+	position:absolute;
+	top:40px;
+	left:90px;
+	right: 0;
+	down: 0;
+	z-index:90;
+	width: 320px;
+	z-index:90;
+	text-align:left;
+	font-size: 8pt;
+	color: White;
+	text-shadow: 0px 1px 1px rgba(0,0,0,.8);
+}
+
+#separator{
+	color:white;
+	opacity: 0.7;
+	font-family: Default;
+}
+
+#lowtemp{
+//	color: deepskyblue;
+	margin: 3px;
+}
+
+#hightemp {
+//	color: darkorange;
+	margin: 3px;
+}

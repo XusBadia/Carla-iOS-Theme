@@ -1,0 +1,283 @@
+/* *************************************** */
+  /* ****** Done by DemoneLatino ****** */
+
+
+/* *************************************** */
+ /* ************* FONTS **************** */
+
+@font-face {
+
+	font-family: Opificio-Serif-rounded;
+
+	src: url(Opificio-Serif-rounded.ttf);
+}
+
+@font-face {
+
+	font-family: Clock;
+
+	src: url(Clock.ttf);
+}
+
+
+@font-face {
+
+	font-family: bauhausm;
+
+	src: url(bauhausm.ttf);
+}
+
+body {
+
+	margin:0;
+
+       top:0;
+
+}
+
+/* *************************************** */
+     /* ********* CLOCK/DATE *********/
+
+
+#clock{
+
+	position:absolute; top: 28px; width:320px; height:480px; text-align: center; z-index:90; left: 0px;
+
+	font-weight: fine; 
+
+	font-size: 55px;
+
+	color: white;
+
+	opacity: 0.8;
+
+	font-family: Clock;
+
+	text-shadow: 0px 0px 5px black;
+
+}
+
+#ampm{
+
+font-weight: fine; 
+text-transform: uppercase; 
+font-size: 15px; 
+color: deepskyblue;
+text-shadow: 0px 0px 5px black;
+font-family: Clock;
+opacity: 2.0;
+
+}
+
+#weekday{
+
+	position:absolute; top: 92px; left:0px; width:320px; height:100px; text-align:center; z-index:90;
+
+	font-weight: fine; 
+
+       font-size: 20px;
+
+       color: white;
+
+       opacity: 1;
+
+       text-shadow: 0px 0px 2px black;
+
+       font-family: Opificio-Serif-rounded; 
+
+       text-transform: capitalize;
+
+
+}
+
+#date{
+
+	font-weight: fine; 
+
+       font-size: 18px;
+
+       color: deepskyblue;
+
+       opacity: 1;
+
+       text-shadow: 0px 0px 2px black;
+
+       text-align: left;
+
+       font-family: Opificio-Serif-rounded; 
+
+       text-transform: Capitalize;
+
+}
+
+#month{
+
+	font-weight: fine; 
+
+       font-size: 20px;
+
+       color: white;
+
+       opacity: 1;
+
+       text-shadow: 0px 0px 2px black;
+
+}
+
+#year{
+
+	position:absolute; top:103px; left:13px; width:320px; height:480px; text-align:center; z-index:90;
+
+	font-weight: fine; 
+
+       font-size: 55px;
+
+       color: white;
+
+       opacity: 0.7;
+
+       text-shadow: 0px 0px 1px black;
+
+       text-align: left;
+
+       font-family: Opificio-Serif-rounded; 
+
+       display: none;
+
+
+}
+
+/* *************************************** */
+ /* ************* WEATHER **************** */
+
+#city{
+
+	position:absolute; top: 20px; left:0px; width:320px; height:480px; text-align:center; z-index:90;
+
+	font-weight: fine; 
+
+	font-size: 20px;
+
+	color: lightcyan;
+
+	opacity: 0.8;
+
+	text-shadow: 0px 1px 1px black;
+
+	font-family: Clock;
+
+	text-transform: capitalize;
+
+}
+
+#temp{	
+
+position:absolute; 
+
+top: 398px; 
+
+left: 3px; 
+
+width: 320px; 
+
+height: 480px; 
+
+text-align:left; 
+
+z-index: 80;
+
+font-weight: fine; 
+
+font-size: 128px;
+
+color: white;
+
+opacity: 0.35;
+
+text-shadow: 0px 0px 5px black;
+
+font-family: Clock;
+
+text-transform: capitalize;
+
+}
+
+#desc{
+
+	position:absolute;top: 375px; left:3px; width:320px; height:480px; text-align: left; z-index:90;
+
+	font-weight: fine; 
+
+	font-size: 20px;
+
+	color: lightcyan;
+
+	opacity: 1;
+
+	text-shadow: 0px 1px 3px black;
+
+	font-family: Clock;
+
+	text-transform: capitalize;
+
+}
+
+#weatherIcon{
+ 
+position: absolute; 
+
+top: 0px;  
+
+left: 0px; 
+
+width: 320px; 
+
+height: 568px;
+
+opacity: 1;
+
+z-index: -99;
+
+display: true;
+
+
+}
+
+/* *************************************** */
+    /* ****** Refresh Image  ********* */
+
+#refresh{position:absolute; top:42px; left:245px; width: 320px; height: 480px; z-index:120; text-align:center;
+
+width: 30px; 
+
+height: 30px;
+
+}
+
+
+/* *************************************** */
+  /* ******* Weather High&Low ********** */
+
+
+#HighLow{
+
+	position: absolute;
+	top: 400px;
+	left: 13px;
+	width: 320px; 
+	height: 480px;
+	text-align: left;
+	z-index: 1;
+	opacity: 1.0;
+	text-shadow: 1px 1px 3px black;
+	font-size: 30px;
+	font-family: Clock;
+}
+
+#separator{ color:white; opacity: 0.7; font-family: Default;}
+
+#lowtemp{ color: deepskyblue;
+       
+}
+
+#hightemp { color: darkorange; }

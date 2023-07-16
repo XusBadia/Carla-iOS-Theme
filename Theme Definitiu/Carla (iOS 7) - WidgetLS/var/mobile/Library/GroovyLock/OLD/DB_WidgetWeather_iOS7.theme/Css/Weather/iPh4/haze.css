@@ -1,0 +1,26 @@
+#cloudContainer > div {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+	opacity: 0.0;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-timing-function: linear, ease-in;
+}
+#cloudContainer > div > img {
+     position: absolute;
+     width: 300px;
+     height: 200px;
+}
+@-webkit-keyframes fade {
+    0%	 { opacity: 0; }
+    10%	 { opacity: 0.3; }
+	15%	 { opacity: 1.0; }
+	50% { opacity: 0.6; }
+    85%  { opacity: 1.0; }
+    95%  { opacity: 0.3; }
+    100% { opacity: 0; }
+}
+@-webkit-keyframes float {
+    0%	 { -webkit-transform: translateX(-50px); }
+    100% { -webkit-transform: translateX(320px); }
+}

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+    <!-- 
+         biteSMS Theme Definition
+
+         This is a very simple theme which only sets the font and a few custom images.
+      -->
+
+    <!-- Describes the theme and description -->
+    <key>name</key>          <!-- Required -->
+    <string>biteCarla 1.2</string> <!-- Displayed when the user selects a theme to apply -->
+    <key>theme-version</key>       <!-- Required -->
+    <string>2</string>
+    <key>description</key>
+    <string><![CDATA[
+<html>
+<style>
+body { font-family:"Helvetica"; font-size: medium; background-color:#723273; color:#F3C0F6; text-shadow: 0px 1px 0px black;}
+a {color:#FDE6FF; text-decoration: none;}
+</style>
+
+<body>
+<span style="font-size:large; color:#ffffff"><b>biteCarla</b></span><span style="font-size:large"> v1.0 - Pink</span>
+
+<p>This theme complements <a href="cydia://package/com.macciti.carlaios7">Carla iOS 7</a>, a Winterboard theme that gives your iDevice a refreshed look but keeping the native iOS 7 feeling</p>
+
+<p>If you find a bug, want to ask me anything or you have an amazing idea you want to share, feel free to do so on:</p>
+<ul>
+<li><a href="http://www.twitter.com/WinfisDesign">Twitter</a></li>
+<li><a href="http://www.facebook.com/WinfisDesign">Facebook</a></li>
+<li><a href="https://plus.google.com/+WinfisDesign">Google+</a></li>
+<li><a href="http://dribbble.com/winfis">Dribbble</a></li>
+<li><a href="mailto:contact@winfisdesign.com">Email</a></li>
+</ul>
+
+</body>
+</html>
+]]></string>
+    <!-- The "retina" and "applies-to" values do not affect functionality.
+         They are used to display additional information in the list
+         of available themes in the &quot;Themes&quot; settings page.
+      -->
+    <key>retina</key>
+    <false/> <!-- true means that this theme can only be used on Retina displays. 
+                  false (default) means it can be used on any display. -->
+    <key>applies-to</key>
+    <string>app,qr</string> <!-- Specify "app" if only the app is themed (not QC/QR), 
+                                 "qr" if only QC/QR is themed (not the app).
+                                 Default is app and qr. -->
+
+    <!--<key>font</key>
+    <string>Bradley Hand</string>--> 
+
+    <!-- Uses NavbarPortrait.png and NavbarLandscape.png (or .jpg) as the
+         navigation bar background image. Portrait image size should be 320x44 (or
+         640x88 for high res), landscape should be 480x32 (or 960x64) -->
+    <key>navbar-style</key>
+    <integer>0</integer> <!-- 0 (default) blue, 1 black.  Also affects appearance of button in navbar. -->
+    <key>navbar-tint</key>      <!-- No default -->
+    <string>#E1B3DDFF</string>
+    <key>navbar-text-color</key>
+    <string>#f7f7f7</string>
+    <key>navbar-shadow-color</key>
+    <string>clearColor</string>
+
+    <!-- BarButtonPortrait.png and BarButtonLandscape.png (or .jpg) are used as the bar button background images.
+         BackButtonPortrait.png and BackButtonLandscape.png (or .jpg) are used as the back button background images.
+         BarDivider.png (or .jpg) is used as the divider between the Settings navbar button and the Compose New button.
+      -->
+    <key>barbutton-tint</key> <!-- Tint applied to buttons in the navbar -->
+    <string>#F8ADFF</string>
+    <key>barbutton-text-color</key>
+    <string>#ffffff</string>
+    <key>barbutton-shadow-color</key>
+    <string>#48515c</string>
+
+    <key>statusbar-style</key>
+    <integer>1</integer> <!-- 0 (default) grey, 1 black transluscent, 2 black opaque -->
+
+    <!-- =========================================================================== -->
+    <!-- Conversation screen settings
+         Due to the way the balloons are drawn in iOS 7, a background image cannot be applied.
+    -->
+    <key>convo-bg-color</key>
+    <string>whiteColor</string>
+    <key>keyboard-appearance</key>
+    <integer>0</integer> <!-- 0 (default) grey, 1 black -->
+    <key>convo-text-color</key> <!-- Color of most non-message text -->
+    <string>#8E8E93FF</string>
+    <key>send-disabled-color</key>
+    <string>#8E8E93FF</string>
+    <key>send-delayed-color</key> <!-- Label color for "Stop" mode in delayed sending -->
+    <string>#ff0000ff</string>
+
+    <key>green-balloon-colors</key> <!-- Used to create a gradient for green balloon backgrounds -->
+    <array>
+      <string>#DE4AEF</string>  <!-- Color at top of screen-->
+      <string>#BA22CC</string>  <!-- Color at bottom of screen + send button text -->
+    </array>
+    <key>green-balloon-selected-color</key> <!-- Overlay color of selected green balloon cells -->
+    <string>#00000033</string>
+    <key>green-balloon-text-color</key>
+    <string>#FFFFFF</string>
+    <key>green-balloon-link-color</key>
+    <string>#FFFFFF</string>
+
+    <key>blue-balloon-colors</key>
+    <array>
+      <string>#5AC8FAFF</string>
+      <string>#007AFFFF</string>
+    </array>
+    <key>blue-balloon-selected-color</key>
+    <string>#00000033</string>
+    <key>blue-balloon-text-color</key>
+    <string>#FFFFFF</string>
+    <key>blue-balloon-link-color</key>
+    <string>#FFFFFF</string>
+
+    <key>gray-balloon-colors</key> <!-- Default is no gradient (single color).  Specify 2 colors to create a gradient -->
+    <array>
+      <string>#E5E5EAFF</string>
+    </array>
+    <key>gray-balloon-selected-color</key>
+    <string>#00000019</string>
+    <key>gray-balloon-text-color</key>
+    <string>#000000FF</string>
+    <key>gray-balloon-link-color</key>
+    <string>#007AFFFF</string>
+
+    <key>entry-bg-tint</key>   <!-- Applies to the whole entry field, not just the typing area -->
+    <string>#84448099</string>
+    <key>entry-divider-color</key>
+    <string>#0000004C</string>
+    <key>entry-deftext-color</key>
+    <string>#C7C7CCFF</string>
+    <key>entry-text-color</key> <!-- Input field text color -->
+    <string>blackColor</string>
+    <key>entry-text-bg-color</key> <!-- typing area background color -->
+    <string>whiteColor</string>
+
+    <key>char-counter-color</key> <!-- Character counter text color -->
+    <string>#C7C7CCFF</string>
+
+
+    <!-- =========================================================================== -->
+    <!-- List screen settings -->
+    <!-- The file ListBackground.png (or jpg) is used as the background image  -->
+
+    <key>searchbar-tint</key>   <!-- No default -->
+    <string>#9A309B</string>
+    <key>search-bg-color</key>  <!-- Background color of cells when searching -->
+    <string>white</string>
+    <key>selected-bg-color</key>
+    <string>#80808040</string>
+    <key>list-separator-color</key>
+    <string>#C7C7CCFF</string>
+    <key>chevron-color</key>
+    <string>#C7C7CCFF</string>
+    <key>list-from-text-color</key>
+    <string>#000000FF</string>
+    <key>list-from-shadow-color</key> <!-- No default -->
+    <string>#00000000</string>
+    <key>list-date-text-color</key>
+    <string>#8E8E93FF</string>
+    <key>list-date-shadow-color</key> <!-- No default -->
+    <string>#00000000</string>
+    <key>list-msg-text-color</key>
+    <string>#8E8E93FF</string>
+    <key>list-msg-shadow-color</key> <!-- No default -->
+    <string>#00000000</string>
+
+    <!-- =========================================================================== -->
+    <!-- Quick Reply/Quick Compose settings -->
+
+    <!--<key>qr-font</key>
+    <string>Bradley Hand</string>
+    <key>qr-bold-font</key>
+    <string>BradleyHandITCTT-Bold</string>-->
+
+    <!-- QC/QR background, comprised of a blur and a gradient image.
+
+         qr-blur value should be one of: AdaptiveLight, Blur, ColorSample, Colored,
+         Combiner, Dark, DarkLow, DarkWithZoom, Light, LightLow, NonAdaptive, None,
+         SemiLight, UltraDark, UltraLight.
+         The names are not very descriptive, so experiment. ColorSample means no blur!
+
+         Gradient can be completely replaced by supplying an image called qr-alert-bg.png.
+    -->
+    <key>qr-blur</key>
+    <string>Light</string>
+    <key>qr-gradient-inner</key>
+    <string>#DB69D180</string>
+    <key>qr-gradient-outer</key>
+    <string>#DB69D180</string>
+
+    <!-- Send button label color is based on sender method -->
+    <key>qr-send-im-color</key> <!-- Send using iMessage -->
+    <string>#96C8FF</string>
+    <key>qr-send-sms-color</key> <!-- Send as SMS -->
+    <string>#79FF72</string>
+    <key>qr-send-bite-color</key> <!-- Send via biteSMS -->
+    <string>#F8A9FF</string>
+    <key>qr-send-shadow-color</key>
+    <string>clearColor</string>
+    <key>qr-send-disabled-color</key>
+    <string>#ffffff</string>
+    <key>qr-send-delayed-color</key> <!-- Label color for "Stop" mode in delayed sending -->
+    <string>#00ffff</string>
+
+    <key>qr-button-text-color</key>
+    <string>#f1f1f1</string>
+    <key>qr-button-highlight-color</key>
+    <string>blackColor</string>
+    <key>qr-button-shadow-color</key>
+    <string>clearColor</string>
+    <key>qr-button-disabled-color</key>
+    <string>#ffffff</string>
+    <key>qr-button-border-color</key>
+    <string>lightGrayColor</string>
+    <key>qr-contact-color</key>
+    <string>#f1f1f1</string>
+    <key>qr-time-color</key>
+    <string>lightGrayColor</string>
+    <key>qr-message-color</key>
+    <string>#f1f1f1</string>
+    <key>qr-text-color</key>
+    <string>#f1f1f1</string>
+    <key>qr-text-background-color</key>
+    <string>clearColor</string>
+    <key>qr-char-counter-color</key>
+    <string>#f1f1f1</string>
+    <key>qr-char-counter-shadow-color</key>
+    <string>clearColor</string>
+    <key>qc-to-color</key> <!-- Color of the To: label -->
+    <string>#f1f1f1</string>
+    <key>qc-recipient-color</key>
+    <string>#f1f1f1</string>
+
+    <key>qr-keyboard-appearance</key>
+    <integer>1</integer> <!-- 0 (default) grey, 1 black, 2 light, 3 alert -->
+
+    <!-- Recents pulldown -->
+    <key>recents-im-balloon-text-color</key> <!-- Outgoing iMessage -->
+    <string>#FFFFFF</string>
+    <key>recents-sms-balloon-text-color</key> <!-- Outgoing text message -->
+    <string>#FFFFFF</string>
+    <key>recents-incoming-balloon-text-color</key> <!-- Incoming message -->
+    <string>#252525</string>
+    <key>recents-sender-text-color</key> <!-- Name of sender in group messages -->
+    <string>#568ad6</string>
+    <key>recents-timestamp-text-color</key>
+    <string>WhiteColor</string>
+
+</dict></plist>
