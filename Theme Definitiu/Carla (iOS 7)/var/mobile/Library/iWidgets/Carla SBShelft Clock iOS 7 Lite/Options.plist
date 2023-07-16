@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string> </string>
+		<key>type</key>
+		<string>edit</string>
+		<key>label</key>
+		<string>GPS or Custom location (PRO)</string>
+		<key>default</key>
+		<string> </string>
+	</dict>
+	<dict>
+		<key>default</key>
+		<string>12h format</string>
+		<key>label</key>
+		<string>Choose Clock</string>
+		<key>name</key>
+		<string>Clock</string>
+		<key>options</key>
+		<dict>
+			<key>12h format</key>
+			<string>12</string>
+			<key>24h format</key>
+			<string>24</string>
+		</dict>
+		<key>type</key>
+		<string>select</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string> </string>
+		<key>type</key>
+		<string>edit</string>
+		<key>label</key>
+		<string>Language (PRO)</string>
+		<key>default</key>
+		<string> </string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string> </string>
+		<key>type</key>
+		<string>edit</string>
+		<key>label</key>
+		<string>Celcius or Fahrenheit (PRO)</string>
+		<key>default</key>
+		<string> </string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,3 @@
+These are all the versions of the icon that didn't make the cut (except one, of course). I still feel that the newsstand icon should be different, but the app style makes it difficult to justify a classic wooden library.
+
+Put them inside Bundles/com.apple.springboard
