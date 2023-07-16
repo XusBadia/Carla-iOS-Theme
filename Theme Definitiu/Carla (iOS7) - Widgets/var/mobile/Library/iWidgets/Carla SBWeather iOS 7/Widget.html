@@ -1,0 +1,52 @@
+ <!-- code by Dacal mod by DemoneLatino -->
+
+<html><head>
+<title>DemoneLatino iWidget</title>
+<link rel="stylesheet" href="Files/Style.css" type="text/css" media="screen" />
+<!--<script type="text/javascript" src="Scripts/configureMeTest.js"></script>-->
+<script type="text/javascript" src="Scripts/main.js"></script>
+<script type="text/javascript" src="Scripts/location.js"></script>
+<script type="text/javascript" charset="utf-8" src="Scripts/WeatherIcons.js"/></script>
+</head>
+
+<body onLoad="onLoad()">
+
+</head>
+
+<body>
+
+<!--<div class="clockwidget">
+	<div id="clock">
+		<script language="JavaScript">updateClock(); setInterval('updateClock()', 1000 )</script>
+	</div>
+	<div id="mins"> <span id="ampm">
+		<script language="JavaScript">updateClock(); setInterval('updateClock()', 1000 )</script>
+	</div>
+</div>-->
+
+<div class="datewidget">
+	<div id="weekday">
+	       <script language="JavaScript">calendarDate(); setInterval('calendarDate()', 1000 )</script>
+	</div>
+	<div id="date">
+	       <script language="JavaScript">calendarDate(); setInterval('calendarDate()', 1000 )</script>
+	</div>
+	<div id="month">
+	       <script language="JavaScript">calendarDate(); setInterval('calendarDate()', 1000 )</script>
+	</div>
+</div>
+
+<div class="weatherwidget">
+	<div id="desc"></div>
+	<div id="city"></div>
+	<div id="temp"></div>
+	
+	
+	<div id="HighLow"><a id="hightemp"></a><a id="lowtemp"></a></div>
+	<img id="weatherIcon" src="Icon Sets/dunno.png"/>
+	<img id="refresh" src="Files/Refresh.png" onClick="history.go(0)" value="Refresh">
+</div>
+
+<!--<img src="Files/bg.png" style="position:absolute;top:0px;left:0px;z-index:-100;">-->
+
+</body></html>

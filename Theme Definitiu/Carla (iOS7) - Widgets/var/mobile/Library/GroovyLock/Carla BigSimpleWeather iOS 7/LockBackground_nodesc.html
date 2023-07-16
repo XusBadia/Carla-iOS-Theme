@@ -1,0 +1,28 @@
+ <!-- code by Dacal mod by DemoneLatino -->
+
+<html><head>
+<title>DemoneLatino iWidget</title>
+<link rel="stylesheet" href="Files/Style.css" type="text/css" media="screen" />
+<script type="text/javascript" src="Scripts/configureMe.js"></script>
+<script type="text/javascript" src="Scripts/main.js"></script>
+<script type="text/javascript" src="Scripts/location.js"></script>
+<script type="text/javascript" charset="utf-8" src="Scripts/WeatherIcons.js"/></script>
+</head>
+
+<body onLoad="onLoad()">
+
+<div class="widgetcontainer">
+
+<div class="weatherwidget">
+	<img id="weatherIcon" src="Icon Sets/dunno.png"/>
+	<div id="desc" style="display:none"></div>
+	<div id="city"></div><div id="temp"></div>
+	
+	
+	<div id="HighLow"><a id="hightemp"></a><a id="lowtemp"></a></div>
+	<img id="refresh" src="Files/Refresh.png" onClick="history.go(0)" value="Refresh">
+</div>
+
+<!--<img src="Files/bg.png" style="position:absolute;top:0px;left:0px;z-index:-100;">-->
+</div>
+</body></html>

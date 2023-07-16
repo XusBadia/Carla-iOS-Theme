@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>gps</string>
+		<key>type</key>
+		<string>switch</string>
+		<key>label</key>
+		<string>GPS (off for code)</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>locale</string>
+		<key>type</key>
+		<string>edit</string>
+		<key>label</key>
+		<string>Weather.com Code</string>
+	<key>default</key>
+		 <string>0</string>
+	</dict>
+	<dict>
+		<key>default</key>
+		<string>English</string>
+		<key>label</key>
+		<string>Choose Language</string>
+		<key>name</key>
+		<string>Lang</string>
+		<key>options</key>
+		<dict>
+			<key>English</key>
+			<string>en</string>
+			<key>French</key>
+			<string>fr</string>
+			<key>German</key>
+			<string>de</string>
+			<key>Italian</key>
+			<string>it</string>
+			<key>Spanish</key>
+			<string>es</string>
+			<key>Catalan</key>
+			<string>ca</string>
+		</dict>
+		<key>type</key>
+		<string>select</string>
+	</dict>
+	<dict>
+		<key>default</key>
+		<string>Celsius</string>
+		<key>label</key>
+		<string>Celsius or Fahrenheit</string>
+		<key>name</key>
+		<string>Temp</string>
+		<key>options</key>
+		<dict>
+			<key>Celsius</key>
+			<string>c</string>
+			<key>Fahrenheit</key>
+			<string>f</string>
+		</dict>
+		<key>type</key>
+		<string>select</string>
+	</dict>
+</array>
+</plist>
